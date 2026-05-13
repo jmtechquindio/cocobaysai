@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Bay SAI - Hospedaje Turístico Premium</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'caribbean-turquoise': '#19C6C8',
+                        'ocean-blue': '#0077B6',
+                        'sand-light': '#F4EBD0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-sand-light text-gray-800 antialiased selection:bg-caribbean-turquoise selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center rounded-full glass-nav px-6 py-3">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="palmtree" class="text-ocean-blue w-6 h-6"></i>
+                    <span class="font-heading font-bold text-xl text-ocean-blue tracking-wider">COCO BAY <span class="text-caribbean-turquoise">SAI</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-800 hover:text-ocean-blue transition-colors font-medium">Inicio</a>
+                    <a href="#alojamiento" class="text-gray-800 hover:text-ocean-blue transition-colors font-medium">Alojamiento</a>
+                    <a href="#experiencia" class="text-gray-800 hover:text-ocean-blue transition-colors font-medium">Experiencia</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/573000000000?text=Hola,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20Coco%20Bay%20SAI" target="_blank" class="bg-caribbean-turquoise hover:bg-ocean-blue text-white px-5 py-2 rounded-full font-medium transition-all shadow-lg hover:shadow-xl flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        Reservar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Playa San Andres" class="w-full h-full object-cover filter brightness-[0.65]">
+            <div class="absolute inset-0 bg-gradient-to-b from-ocean-blue/40 to-black/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 animate-fade-in-up">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-medium mb-6 uppercase tracking-widest">
+                Bienvenido al Paraíso
+            </span>
+            <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                Tu Refugio Premium en <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-caribbean-turquoise to-[#60EFEF]">San Andrés Islas</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-white/90 mb-10 font-light drop-shadow-md max-w-2xl mx-auto">
+                Despierta con el sonido del mar de los siete colores en un ambiente boutique diseñado para tu descanso absoluto.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/573000000000?text=Hola,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20Coco%20Bay%20SAI" target="_blank" class="bg-gradient-to-r from-caribbean-turquoise to-[#15b0b2] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-[0_0_20px_rgba(25,198,200,0.4)] hover:shadow-[0_0_30px_rgba(25,198,200,0.6)] flex items-center justify-center gap-2 transform hover:scale-105">
+                    <i data-lucide="message-square" class="w-6 h-6"></i>
+                    Consulta Disponibilidad
+                </a>
+                <a href="#alojamiento" class="glass-btn text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 hover:bg-white/20">
+                    Ver Habitaciones
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+            <a href="#alojamiento" class="text-white/80 hover:text-white">
+                <i data-lucide="chevron-down" class="w-10 h-10"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="alojamiento" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold text-ocean-blue mb-4">Comodidad Tropical</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Espacios diseñados para ofrecerte el máximo confort con una estética caribeña y moderna. Tu hogar lejos de casa.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-sand-light/30 border border-sand-light">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Apartamento" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-ocean-blue">
+                            Desde $120/noche
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-800 mb-2">Suite Océano</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Amplia suite con vista al mar, cama king size, balcón privado y decoración minimalista tropical.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-6 border-t border-gray-200 pt-4">
+                            <span class="flex items-center gap-1"><i data-lucide="users" class="w-4 h-4"></i> 2-3 Personas</span>
+                            <span class="flex items-center gap-1"><i data-lucide="wifi" class="w-4 h-4"></i> WiFi Alta Velocidad</span>
+                        </div>
+                        <a href="#" class="block w-full text-center border-2 border-caribbean-turquoise text-caribbean-turquoise hover:bg-caribbean-turquoise hover:text-white font-semibold py-2 rounded-full transition-colors">
+                            Ver Detalles
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-sand-light/30 border border-sand-light">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1de2d9d000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Apartamento" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-ocean-blue">
+                            Desde $90/noche
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-800 mb-2">Apartamento Palmera</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Perfecto para familias o grupos, con cocina completamente dotada y sala de estar.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-6 border-t border-gray-200 pt-4">
+                            <span class="flex items-center gap-1"><i data-lucide="users" class="w-4 h-4"></i> 4-5 Personas</span>
+                            <span class="flex items-center gap-1"><i data-lucide="coffee" class="w-4 h-4"></i> Cocina Equipada</span>
+                        </div>
+                        <a href="#" class="block w-full text-center border-2 border-caribbean-turquoise text-caribbean-turquoise hover:bg-caribbean-turquoise hover:text-white font-semibold py-2 rounded-full transition-colors">
+                            Ver Detalles
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-sand-light/30 border border-sand-light">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-ocean-blue">
+                            Desde $75/noche
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-800 mb-2">Estudio Coral</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Acogedor estudio ideal para parejas, diseño fresco con detalles en madera y bambú.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-6 border-t border-gray-200 pt-4">
+                            <span class="flex items-center gap-1"><i data-lucide="users" class="w-4 h-4"></i> 2 Personas</span>
+                            <span class="flex items-center gap-1"><i data-lucide="tv" class="w-4 h-4"></i> Smart TV</span>
+                        </div>
+                        <a href="#" class="block w-full text-center border-2 border-caribbean-turquoise text-caribbean-turquoise hover:bg-caribbean-turquoise hover:text-white font-semibold py-2 rounded-full transition-colors">
+                            Ver Detalles
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ocean-blue text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-heading text-2xl font-bold mb-4">Coco Bay SAI</h2>
+            <p class="text-white/70 mb-6">San Andrés Islas, Colombia</p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="hover:text-caribbean-turquoise transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-caribbean-turquoise transition-colors"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-caribbean-turquoise transition-colors"><i data-lucide="map-pin" class="w-6 h-6"></i></a>
+            </div>
+            <p class="text-white/50 text-sm">© 2026 Coco Bay SAI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
